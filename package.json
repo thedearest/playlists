@@ -1,0 +1,57 @@
+{
+  "name": "playlists",
+  "version": "1.0.0",
+  "description": "crud-app",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "test": "jest",
+    "build": "SET NODE_ENV=production npm run clean & webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berezovskycom/react-boilerplate.git"
+  },
+  "author": "berezovskycom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berezovskycom/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/berezovskycom/react-boilerplate#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jest": "^22.4.2",
+    "node-sass": "^4.7.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-test-renderer": "^16.2.0",
+    "redux": "^3.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.2",
+    "uuid": "^3.2.1",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "react-bootstrap": "^0.32.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "<rootDir>/styleMock.js"
+    }
+  }
+}
